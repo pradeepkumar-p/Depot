@@ -1,0 +1,18 @@
+<h1>Choose your favourite dishes....</h1>
+
+<% @products.each do |product| -%>
+  <div class="entry">
+    <%= image_tag(product.image_url) %>
+    <h3><%=h product.title %></h3>
+    <%= product.description %> <br>
+   <% form_remote_tag :url => { :action => :add_to_cart, :id => product } do %>
+   <%= submit_tag "Add to Cart" %>
+   <% end %>
+    <div class="price-line">
+    <span class="price"><%= number_to_currency(product.price) %></span>
+   
+
+    </div>
+  </div>
+<% end %>
+

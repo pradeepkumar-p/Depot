@@ -1,0 +1,17 @@
+
+<% if cart_item == @current_item %>
+  <tr id="current_item">
+<% else %>
+  <tr>
+<% end %>
+<td><% form_for @cart.items, :url => {:controller => 'store', :action => 'cart_update', :id => cart_item.getproductid} do |f| %>
+  <%= f.text_field :quantity, :size => '1', :value=>cart_item.quantity %>
+  <%= f.hidden_field :id, :value => "#{cart_item.getproductid}" %>
+  <%= f.submit '*'%>
+<% end %></td>
+
+  <td><%=h cart_item.title %></td>
+  <td class="item-price"><%= number_to_currency(cart_item.price) %></td>
+  <td> &nbsp;  <%= link_to 'X', {:controller => 'store', :action => 'remove_cart_item', :id => cart_item.getproductid } %></td>
+</tr>
+

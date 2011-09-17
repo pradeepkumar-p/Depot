@@ -1,0 +1,79 @@
+#lightbox_container {  
+    
+  overflow:auto;  
+  font-family:"Lucida Grande",Verdana;  
+  font-size:7px;  
+  color:black;  
+  text-align:left; 
+   visibility: visible;
+  background-color:#81BEF7;  
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+} 
+
+#lightbox_overlay {  
+  background-color:pink;  
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}  
+
+#left{
+    float: left;
+
+    margin-top: 1px;
+    margin-right: 2px;
+    position: absolute;
+    width: 350px;
+    visibility: visible;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: large;
+}
+#right{
+    border-top:0 none;
+    float:left;
+    left:350px;
+    margin-left:364px;
+    margin-top:-317px;
+    right:850px;
+    background-color: #968138;
+    color: #e7de8d;
+
+    width:908px;
+}
+
+
+#redd {
+    width: 364px;
+    background-color: #922118;
+    font-family: "Lucida Grande",Verdana;
+    color: black;
+    height:298px;
+}
+#redd1 {
+color:black;
+font-family:"Lucida Grande",Verdana;
+line-height:12px;
+text-align:left;
+width: 364px;
+background-color: #922118;
+height:298px;
+}
+.grenn{
+    width: 400px;
+    background-color: #968138;
+    color: #e7de8d;
+}
+
+.list_contact
+{
+  border-top:0 none;
+    float:left;
+    left:350px;
+    margin-left:364px;
+    margin-top:-298px;
+    right:850px;
+    background-color: #968138;
+    color: #e7de8d;
+    height:298px;
+    width:908px;
+}
